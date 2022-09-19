@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,5 +7,41 @@
 }
 
 body {
-    background-color: darkgrey;
+    background-color: rgb(199, 210, 216);
+    height:100vh;  /*Why height:100% doesn't work? Doesn't it mean 100% of the container, the html?*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.container {
+    background-color: snow;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    width: 370px;  /*desktop and mobile seem to have the same width, so i use a "fixed" measure instead of a %*/
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.container img {
+    width: 100%;
+    text-align: center;
+    border-radius: 18px;
+}
+
+h1 {
+    padding-top: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+p {
+    color: grey;
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
